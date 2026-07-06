@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workz Redesign — Zeynep Onat Pilavcı</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="logo" href="../index.html">Zeynep Onat Pilavcı</a>
+      <div class="nav-links">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#about">About</a>
+        <a href="mailto:onatzey@gmail.com">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="cs-hero">
+    <div class="wrap">
+      <p class="kicker">Product Design · Workz (Kariyer.net)</p>
+      <h1>Redesigning an HR platform, end to end</h1>
+      <p class="lede">Workz is Kariyer.net's HR management product, consisting of dashboards, employee records,
+        organization structure, leave management, forms, and onboarding screens. I redesigned it across the full
+        surface: every core flow, in desktop and mobile, with every state designed up front on a shared component
+        architecture.</p>
+      <div class="cs-meta">
+        <div>
+          <h4>Role</h4>
+          <p>Product Designer</p>
+        </div>
+        <div>
+          <h4>Type</h4>
+          <p>End-to-end product redesign</p>
+        </div>
+        <div>
+          <h4>Scope</h4>
+          <p>Dashboard<br>Employee Management<br>Employee Profile<br>Leave Management<br>Chatbot<br>Wireflow</p>
+        </div>
+        <div>
+          <h4>Techniques</h4>
+          <p>Auto Layout<br>Components<br>AI Tools</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="cs-body">
+    <div class="wrap">
+
+      <h2>A dashboard that answers the morning questions</h2>
+      <p>The home screen is a personal space. It greets the user by name and answers what an employee actually
+        opens an HR tool to find out: how much leave do I have left, what's waiting on my approval, who on my team has
+        something coming up?
+        Managers get their pending approvals and team updates in the same glance.</p>
+
+      <figure class="figure framed">
+        <img src="../assets/workz-dashboard-desktop.png"
+          alt="Workz home dashboard: personal greeting, leave balance gauge, pending approvals, team special days, upcoming leaves, and onboarding tasks" />
+        <figcaption>The home dashboard. The leave-balance gauge, approval queue, and team events answer the most
+          frequent questions without a single extra click.</figcaption>
+      </figure>
+
+      <div class="callout">
+        <p>Desktop and mobile aren't separate designs. One source of truth per widget, two layouts for free.</p>
+      </div>
+
+      <h2>Employee management at scale</h2>
+      <p>The employee directory is the screen HR lives in. Status chips, sortable columns, filters, and pagination all
+        come from the component library, so the directory stays consistent with every other data surface in the product.
+        Its variations such as active, onboarding, offboarding, and passive views, informational banners, and the empty
+        state were designed as a set, each with its mobile counterpart.</p>
+
+      <figure class="figure framed">
+        <img src="../assets/workz-employees-table.png"
+          alt="Employee directory table with filters, status chips, sortable columns, and pagination" />
+        <figcaption>The employee directory.</figcaption>
+      </figure>
+
+      <p>Each employee opens into a profile with its own dashboard containing personal details, work information,
+        documents, education, and leave, organized into tabs that reuse the same card and table components.</p>
+
+      <figure class="figure framed">
+        <img src="../assets/workz-profile-dashboard.png"
+          alt="Employee profile dashboard with personal summary and tabbed sections for details, documents, and leave" />
+        <figcaption>The employee profile.</figcaption>
+      </figure>
+
+      <h2>Leave management: from requests to insight</h2>
+      <p>Leave is the highest-traffic HR workflow. The leave dashboard pairs the operational table with the analytics an
+        HR manager plans around: monthly leave trends, usage by department, leave-type distribution, and workforce
+        availability over time.</p>
+
+      <figure class="figure framed">
+        <img src="../assets/workz-leave-dashboard.png"
+          alt="Leave management dashboard: KPI cards, operations table with approval statuses, monthly trend chart, department usage bars, leave type donut, and workforce availability chart" />
+        <figcaption>The leave dashboard: operations up top, planning insight below.</figcaption>
+      </figure>
+
+      <h2>A chatbot where the work happens</h2>
+      <p>The Workz assistant opens as a panel inside the screen the user is already on.
+        The conversation UI carries the product's component language rather than looking like a bolted-on widget, and on
+        mobile the same assistant becomes a full-screen chat.</p>
+
+      <figure class="figure">
+        <img src="../assets/workz-chatbot.png"
+          alt="Workz chatbot: closed and open conversation states as a panel over the leave dashboard, plus the full-screen mobile chat" />
+        <figcaption>The assistant over the leave dashboard.</figcaption>
+      </figure>
+
+      <h2>Designing the flow before the screens</h2>
+      <p>For the forms-and-surveys module I worked wireflow-first: every screen, dialog, and decision point mapped with
+        its connections before any high-fidelity work. The wireflow made the module's real complexity visible early
+        (where flows branch, which dialogs interrupt, what each state needs) so that the polished screens could focus on
+        composition.</p>
+
+      <figure class="figure">
+        <img src="../assets/workz-forms-wireflow.png"
+          alt="Zoomed-out wireflow of the forms and surveys module showing dozens of connected screens, dialogs, and decision branches" />
+        <figcaption>The forms &amp; surveys wireflow.</figcaption>
+      </figure>
+
+    </div>
+  </main>
+
+  <nav class="cs-nav">
+    <div class="wrap">
+      <a class="prev" href="techcareer-web.html"><span class="label">← Previous</span><span class="title">Techcareer.net
+          responsive web</span></a>
+      <a class="next" href="interviewco-landing-pages.html"><span class="label">Next →</span><span
+          class="title">interview.co landing pages</span></a>
+    </div>
+  </nav>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Zeynep Onat Pilavcı</span>
+      <span><a href="mailto:onatzey@gmail.com">onatzey@gmail.com</a></span>
+    </div>
+  </footer>
+
+</body>
+
+</html>

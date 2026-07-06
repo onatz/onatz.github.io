@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Techcareer.net Design System — Zeynep Onat Pilavcı</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="logo" href="../index.html">Zeynep Onat Pilavcı</a>
+      <div class="nav-links">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#about">About</a>
+        <a href="mailto:onatzey@gmail.com">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="cs-hero">
+    <div class="wrap">
+      <p class="kicker">Design Systems · Techcareer.net</p>
+      <h1>A design system built to scale</h1>
+      <p class="lede">Techcareer.net is Turkey's technology talent platform, offering bootcamps, hiring challenges,
+        hackathons, a variety of online courses, and university events, all shipping constantly.
+        I established and maintain its Figma design system: an atomic architecture of tokens, variables,
+        and variant-driven components with full light and dark theming.</p>
+      <div class="cs-meta">
+        <div>
+          <h4>Role</h4>
+          <p>Product Designer <br>Design System Owner</p>
+        </div>
+        <div>
+          <h4>Approach</h4>
+          <p>Atomic design</p>
+        </div>
+        <div>
+          <h4>Tooling</h4>
+          <p>Figma variables, styles, <br>variants, slots, libraries</p>
+        </div>
+        <div>
+          <h4>Scope</h4>
+          <p>Color, type, spacing, components, theming</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="cs-body">
+    <div class="wrap">
+
+      <h2>The architecture</h2>
+      <p>The system is split into two published libraries: <strong>Atoms</strong> (foundational styles plus simple
+        molecules, merged for practicality) and <strong>Organisms</strong> (complex components like headers, footers,
+        and navigation). Every design file subscribes to these libraries, so a token change propagates across all
+        product work.</p>
+
+      <h2>Foundations: from raw scale to semantic tokens</h2>
+      <p>Color starts as a raw scale and is then mapped to semantic roles
+        (text, background, stroke, helper colors) for both light and dark mode. Designers pick colors by role,
+        which makes theming and consistency automatic.</p>
+
+      <figure class="figure">
+        <img src="../assets/ds-colorscale.png" alt="Full color scale ramps for every hue in the system" />
+        <figcaption>The raw color scale: each hue ramped through consistent steps.</figcaption>
+      </figure>
+
+      <figure class="figure">
+        <img src="../assets/ds-colors.png" alt="Semantic color roles shown in light mode and dark mode side by side" />
+        <figcaption>Semantic color roles defined for light and dark mode.</figcaption>
+      </figure>
+
+      <figure class="figure">
+        <img src="../assets/ds-typography.png"
+          alt="Typography scale: headings, subtitles, body, and other text styles" />
+        <figcaption>The type scale.</figcaption>
+      </figure>
+
+      <h2>Variables make it live</h2>
+      <p>Styles are registered as Figma local variables and styles, with light/dark values paired per token. Once the
+        Atoms library is published, every design file in the organization selects from the same palette and variables
+        allow the designs to instantly switch themes when applied to a frame.</p>
+
+      <figure class="figure">
+        <img src="../assets/ds-variables.png"
+          alt="Figma local variables panel showing paired light-mode and dark-mode values per token" />
+        <figcaption>Tokens as Figma variables: each carries its light- and dark-mode value.</figcaption>
+      </figure>
+
+      <h2>Components: every state, as variants</h2>
+      <p>Molecules and organisms are built with variant architecture so each component carries all of its states,
+        configurable from the instance panel while staying locked to the
+        system.</p>
+
+      <figure class="figure">
+        <img src="../assets/ds-tab.png"
+          alt="Tab component with selected and default states across desktop, mobile, and tablet" />
+        <figcaption>The tab component: states × breakpoints, nested as variants (later reconfigured as slots to improve
+          usability).</figcaption>
+      </figure>
+
+      <div class="two-up">
+        <figure class="figure">
+          <img src="../assets/ds-header.png" alt="Mobile header organism with navigation states" />
+          <figcaption>Header organism — mobile, with navigation states.</figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="../assets/ds-footer.png" alt="Footer organism in desktop and mobile layouts" />
+          <figcaption>Footer organism — desktop and mobile layouts.</figcaption>
+        </figure>
+      </div>
+
+      <h2>Making the system legible to AI</h2>
+      <p>A design system's newest target isn't a designer or a developer, but an AI agent. Documenting the system's
+        tokens, components, and usage rules as <strong>Markdown files and Claude Skills</strong> allows tools like
+        Claude Code to generate on-system UI directly, and the <strong>Figma MCP server</strong> acts as a bridge
+        between the design files and code. The same discipline that keeps human designers consistent also makes
+        AI-generated interfaces land.</p>
+
+      <h2>Maintaining it is the real work</h2>
+      <p>A design system is a product with users. The ongoing work is governance: reviewing new
+        component needs against existing patterns, keeping documentation current inside the files themselves, and
+        publishing library updates so downstream design files stay in sync. The payoff shows in the web work built on
+        top of it — see the <a href="techcareer-web.html">Techcareer.net responsive web designs</a>.</p>
+
+    </div>
+  </main>
+
+  <nav class="cs-nav">
+    <div class="wrap">
+      <a class="prev" href="hr-venue-personas.html"><span class="label">← Previous</span><span class="title">HR Venue
+          personas &amp; journey maps</span></a>
+      <a class="next" href="techcareer-web.html"><span class="label">Next →</span><span class="title">Techcareer.net
+          responsive web</span></a>
+    </div>
+  </nav>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Zeynep Onat Pilavcı</span>
+      <span><a href="mailto:onatzey@gmail.com">onatzey@gmail.com</a></span>
+    </div>
+  </footer>
+
+</body>
+
+</html>

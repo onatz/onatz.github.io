@@ -1,0 +1,7 @@
+# Local tooling state — not part of the published site
+.claude/
+.DS_Store
+
+# Generated deliverables (CV, deck) — not part of the published site
+*.docx
+*.pdf
